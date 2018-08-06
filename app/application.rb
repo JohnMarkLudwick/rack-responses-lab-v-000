@@ -7,7 +7,8 @@ class Application
     
     if time.to_i >= 12
       resp.write "Good Morning!"
-    else time.to_i >= 12 && time.to_i <= 24
+    else 
+      time.to_i >= 12 && time.to_i <= 24
       resp.write "Afternoon!"
     end
  
