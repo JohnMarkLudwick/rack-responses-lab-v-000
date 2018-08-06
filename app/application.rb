@@ -9,8 +9,8 @@ class Application
  
     if timedate>= 12 
       resp.write "Good Morning!"
-    else timedate<
-      resp.write "You Lose"
+    else timedate> 12 && timedate<= 24
+      resp.write "Good Afternoon!"
     end
  
     resp.finish
