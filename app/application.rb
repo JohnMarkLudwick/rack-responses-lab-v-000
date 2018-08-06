@@ -5,7 +5,7 @@ class Application
  
     time = Time.strptime("10pm", "%I%P").strftime("%H:%M")
     
-    if time>= 12
+    if Time.strptime("10pm", "%I%P").strftime("%H:%M")e>= 12
       resp.write "Good Morning!"
     else time> 12 && timedate<= 24
       resp.write "Good Afternoon!"
