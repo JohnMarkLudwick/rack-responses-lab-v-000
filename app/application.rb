@@ -7,9 +7,9 @@ class Application
     num_2 = Kernel.rand(1..20)
     num_3 = Kernel.rand(1..20)
  
-    if timedate>= 12 
+    if time.now>= 12 
       resp.write "Good Morning!"
-    else timedate> 12 && timedate<= 24
+    else time.now> 12 && timedate<= 24
       resp.write "Good Afternoon!"
     end
  
